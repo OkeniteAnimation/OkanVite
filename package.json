@@ -1,13 +1,17 @@
 {
-  "name": "okanvite",
-  "version": "1.0.0",
+  "name": "okevite",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bash": "sh okanvite.sh",
-    "test": "node index.js"
+    "bash": "sh okanvite.sh"
+  },
+  "bin": {
+    "okanvite": "okanvite.sh"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "okevite": "^1.0.2"
+  }
 }

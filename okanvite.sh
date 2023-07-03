@@ -7,7 +7,7 @@ if ! command -v svn &> /dev/null; then
 fi
 
 # Tableau des options de dossiers
-options=("THREE" "REACT" "NODEJS" "VUE" "R3F" "NEXTJS" "SVELTE" "VITE" "VANILLA")
+options=("THREE" "REACT" "NODEJS" "VUE" "R3F" "VANILLA")
 
 # Afficher le titre "Choisissez le dossier à cloner"
 echo "📂 Selectioner un framework :"
