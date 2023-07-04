@@ -9,7 +9,7 @@ const kolorist = require('kolorist');
 
 
 // Tableau des options de dossiers
-const options = ["THREE", "REACT", "NODEJS", "VUE", "R3F", "BLABLA", "VANILLA"];
+const options = ["THREE", "REACT", "VUE", "R3F", "VANILLA"];
 
 // Afficher le titre "Choisissez le dossier à cloner"
 console.log("");
@@ -41,7 +41,7 @@ console.log("");
             // Effectuer une requête à l'API GitHub pour récupérer le contenu du dossier
             const response = await fetch(`https://api.github.com/repositories/661719329/contents/boilerplate/${folderName}`);
             if (!response.ok) {
-              throw new Error(`Erreur lors de la récupération du contenu du dossier : ${response.status} ${response.statusText}`);
+              throw new Error(`❌ Erreur lors de la récupération du contenu du dossier : ${response.status} ${response.statusText}`);
             }
         
             // Convertir la réponse en JSON
@@ -61,7 +61,7 @@ console.log("");
                 // Effectuer une requête pour télécharger le fichier
                 const fileResponse = await fetch(fileUrl);
                 if (!fileResponse.ok) {
-                  throw new Error(`Erreur lors du téléchargement du fichier : ${fileResponse.status} ${fileResponse.statusText}`);
+                  throw new Error(`❌ Erreur lors du téléchargement du fichier : ${fileResponse.status} ${fileResponse.statusText}`);
                 }
         
                 // Enregistrer le fichier localement
