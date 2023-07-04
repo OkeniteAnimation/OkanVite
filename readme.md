@@ -14,12 +14,12 @@
 
 ## Installation 
 
-Pour commencer installer OkeVite depuis npm :
+Pour commencer, il faut installer Okévite depuis npm :
 
 ```bash
 npm i -g okevite 
 ```
-Ensuite vous pouvez lancer okevite avec la commande 
+Ensuite vous pouvez lancer Okévite avec la commande 
 
 ```bash
 okevite
