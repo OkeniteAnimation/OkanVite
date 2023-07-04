@@ -66,3 +66,8 @@ npm publish
 
 Evidement si vous avez fork le projet il faudra changer son nom dans le package.json 
 
+## Developpeur
+
+- [@baptiste-bussiere](https://github.com/baptiste-bussiere)
+
+
