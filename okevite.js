@@ -9,14 +9,15 @@ const kolorist = require('kolorist');
 
 
 // Tableau des options de dossiers
-const options = ["THREE", "REACT", "VUE", "R3F", "VANILLA"];
+const options = ["THREE", "REACT", "VUE", "R3F", "VANILLA", "VIEWER_360", "VIEWER_3D"];
 
 // Afficher le titre "Choisissez le dossier à cloner"
 console.log("");
-console.log(kolorist.bold("👋 Bienvenue & merci d'utiliser Okévite !"));
+console.log('________  ___  __    _______   ___      ___ ___  _________  _______      \r\n|\\   __  \\|\\  \\|\\  \\ |\\  ___ \\ |\\  \\    \/  \/|\\  \\|\\___   ___\\\\  ___ \\     \r\n\\ \\  \\|\\  \\ \\  \\\/  \/|\\ \\   __\/|\\ \\  \\  \/  \/ | \\  \\|___ \\  \\_\\ \\   __\/|    \r\n \\ \\  \\\\\\  \\ \\   ___  \\ \\  \\_|\/_\\ \\  \\\/  \/ \/ \\ \\  \\   \\ \\  \\ \\ \\  \\_|\/__  \r\n  \\ \\  \\\\\\  \\ \\  \\\\ \\  \\ \\  \\_|\\ \\ \\    \/ \/   \\ \\  \\   \\ \\  \\ \\ \\  \\_|\\ \\ \r\n   \\ \\_______\\ \\__\\\\ \\__\\ \\_______\\ \\__\/ \/     \\ \\__\\   \\ \\__\\ \\ \\_______\\\r\n    \\|_______|\\|__| \\|__|\\|_______|\\|__|\/       \\|__|    \\|__|  \\|_______|\r\n      ');
 console.log("");
 
-
+                                                                      
+                                                                          
 // Utiliser prompts pour la sélection du dossier
 (async () => {
     const response = await prompts({
@@ -37,7 +38,7 @@ console.log("");
 
     // Cloner le contenu du dossier spécifié
     try {
-       
+      
             // Effectuer une requête à l'API GitHub pour récupérer le contenu du dossier
             const response = await fetch(`https://api.github.com/repositories/661719329/contents/boilerplate/${folderName}`);
             if (!response.ok) {
