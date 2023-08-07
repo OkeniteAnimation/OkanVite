@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fcfcfc;
+  font-family: "Poppins-Medium";
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(244, 248, 248);
+  user-select: none;
+}
+h1 {
+  font-family: "arial";
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Montserrat-Bold";
+
+  margin: 0;
+}
+
+canvas {
+  height: 100vh;
+}
+
+.loadingScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  user-select: none;
+  touch-action: none;
+  background-color: rgb(244, 248, 248);
+}
+
+.playerContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  bottom: 1em;
+  display: flex;
+  align-items: center;
+  z-index: 50;
+  justify-content: space-between;
+  .button {
+    padding: 2em;
+    border-radius: 20em;
+
+    cursor: pointer;
+    &:nth-child(2) {
+      rotate: 180deg;
+    }
+
+    img {
+      width: 3em;
+      user-select: none;
+      touch-action: none;
+    }
+  }
+}
