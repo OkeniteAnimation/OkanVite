@@ -1,0 +1,25 @@
+
+name: 🚀 Auto Deploy
+
+on:
+    push:
+        paths:
+            - "dist/*"
+    workflow_dispatch:
+
+jobs:
+    web-deploy:
+        name: 🎉 Déploiement du projet
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🚚 Récuperation du code
+              uses: actions/checkout@v2
+
+            - name: 📂 Synchronisation sur le serveur FTP
+              uses: SamKirkland/FTP-Deploy-Action@4.3.4
+              with:
+                  local-dir: dist/
+                  server: ftp.cluster006.hosting.ovh.net
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  server-dir: path/to/your/project/in/server
