@@ -5,7 +5,7 @@
 </p>
 
 # Okévite
-> Outil simplifié de Vite. Telechargement de boilerplate en ligne de commande.
+> Outil simplifié de Vite. Téléchargement de boilerplate en ligne de commande.
 
 <br>
 
