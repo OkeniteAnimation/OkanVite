@@ -9,7 +9,7 @@ const kolorist = require('kolorist');
 
 
 // Tableau des options de dossiers
-const options = ["THREE", "REACT", "R3F", "PEARL", "VIEWER_360", "VIEWER_3D"];
+const options = ["REACT", "R3F", "VIEWER_360", "VIEWER_3D"];
 
 // Afficher le titre "Choisissez le dossier à cloner"
 console.log("");
