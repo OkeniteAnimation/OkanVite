@@ -1,13 +1,12 @@
-import { useState } from "react";
-
+import { useEffect, useRef, useState } from "react";
+import Scene from "./components/scene.jsx";
 import "./scss/style.scss";
+import { useFrame } from "@react-three/fiber";
 
 function App() {
   return (
     <>
-      <div className="container">
-        <h1>OKENITE ANIMATION</h1>
-      </div>
+      <Scene />
     </>
   );
 }
