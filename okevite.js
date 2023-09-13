@@ -112,7 +112,7 @@ async function downloadFolder(githubPath, localPath) {
               await downloadFolder(`boilerplate/${folderName}`, folderName);
       
               console.log(kolorist.green("✅ Le dossier a été cloné avec succès."));
-              console.log(kolorist.yellow(`🚀 Lancer avec : cd ${folderName}_template/ && npm install && npm run dev`));
+              console.log(kolorist.yellow(`🚀 Lancer avec : cd ${folderName}/ && npm install && npm run dev`));
           } catch (error) {
               console.error(kolorist.red("❌ Le dossier n'a pas pu être cloné. Erreur :"), error.message);
               process.exit(1);
