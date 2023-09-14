@@ -1,4 +1,5 @@
-
+# Instruction pour configurer le déploiement automatique dispo dans le README.md de l'organisation
+# https://github.com/OkeniteAnimation/.github-private/
 name: 🚀 Auto Deploy
 
 on:
